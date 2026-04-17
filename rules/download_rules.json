@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "comment": "Block executable downloads initiated from subframes or scripts",
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*.exe",
+      "resourceTypes": ["sub_frame", "xmlhttprequest", "other"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*.msi",
+      "resourceTypes": ["sub_frame", "xmlhttprequest", "other"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*.apk",
+      "resourceTypes": ["sub_frame", "xmlhttprequest", "other"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*.dmg",
+      "resourceTypes": ["sub_frame", "xmlhttprequest", "other"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*.ps1",
+      "resourceTypes": ["sub_frame", "xmlhttprequest", "other"]
+    }
+  }
+]
